@@ -1,6 +1,6 @@
 <template>
   <div id="body">
-    <header>a</header>
+    <header><h1>WEB Hausarbeit</h1></header>
     <nav>ö</nav>
     <aside>b</aside>
     <article>c</article>
