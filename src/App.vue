@@ -30,7 +30,7 @@ export default {
         #body {
             display: grid;
             grid-template-columns: 1% 18% 1% 79% 1%;
-            grid-template-rows: 2% 8rem 4rem 60rem 2% 8rem 2%;
+            grid-template-rows: 1% 8rem 4rem 60rem 1% 8rem 1%;
             grid-template-areas:
             ". . . . ."
             ". header header header ."
@@ -65,4 +65,23 @@ export default {
             background-color: magenta;
             grid-area: footer;
         }
+
+        /* Responsive layout - when the screen is less than 800px wide, make last column stack on top of the other */
+        @media screen and (max-width: 800px) {
+           #body {
+            display: grid;
+            grid-template-columns: 1% 98% 1%;
+            grid-template-rows: 1% 8rem 4rem 4rem 60rem 1% 8rem 1%;
+            grid-template-areas:
+            ". . . "
+            ". header ."
+            ". nav ."
+            ". aside . "
+            ".article ."
+            ". . ."
+            ". footer ."
+            ". . .";
+        }
+        }
+
 </style>
