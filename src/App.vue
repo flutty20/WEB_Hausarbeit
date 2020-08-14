@@ -5,72 +5,18 @@
     </header>
     <nav>
       <ul>
-        <li>
-          <a href="#1">Einführung</a>
-        </li>
-        <li>
-          <a href="#2">HTML und CSS</a>
-        </li>
-        <li>
-          <a href="#3">RWD</a>
-        </li>
-        <li>
-          <a href="#4">JavaScript</a>
-        </li>
-        <li>
-          <a href="#5">DOM</a>
-        </li>
-        <li>
-          <a href="#6">Asynchrones JS</a>
-        </li>
-        <li>
-          <a href="#7">Modulares Web</a>
-        </li>
-        <li>
-          <a href="#8">SVG</a>
-        </li>
-        <li>
-          <a href="#9">WebApps</a>
-        </li>
-        <li>
-          <a href="#10">Vue.js</a>
-        </li>
-        <li>
-          <a href="#11">MEVN</a>
-        </li>
-        <li>
-          <a href="#12">PHP</a>
-        </li>
-        <li>
-          <a href="#13">React</a>
-        </li>
-        <li>
-          <a href="#14">Security</a>
-        </li>
+       <NavigationTop v-on:setNavigantionLeft="setNavigantionLeft"></NavigationTop>
       </ul>
     </nav>
 
     <aside>
       <ul>
-        <li>
-          <a class="active" href="#1">Erfolgsprinzipien des WWW</a>
-        </li>
-        <li>
-          <a href="#2">HTML-Literatur</a>
-        </li>
-        <li>
-          <a href="#3">HTML-Wireframe</a>
-        </li>
-        <li>
-          <a href="#4">Wireframe mit HTML und CSS</a>
-        </li>
-        <li>
-          <a href="#5">Mögliche Klausuraufgaben</a>
-        </li>
+        <NavigationLeft v-bind:Aufgaben="this.Aufgaben"></NavigationLeft>
       </ul>
     </aside>
 
     <article>c</article>
+
 
     <footer>d</footer>
 
@@ -80,12 +26,29 @@
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import HelloWorld from "./components/HelloWorld.vue"
+import NavigationTop from "./components/NavigationTop.vue"
+import NavigationLeft from "./components/NavigationLeft.vue"
 
 export default {
   name: "App",
   components: {
     HelloWorld,
+    NavigationTop,
+    NavigationLeft
+
+  },
+  data: function () {
+    return {
+      Aufgaben:Array,
+    };
+  },
+  methods: {
+    setNavigationLeft(Aufgaben) {
+
+      this.Aufgaben = Aufgaben
+     
+    },
   },
 };
 </script>
