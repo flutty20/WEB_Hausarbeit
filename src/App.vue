@@ -3,7 +3,53 @@
     <header>
       <h1>WEB Hausarbeit</h1>
     </header>
-    <nav>ö</nav>
+    <nav>
+      <ul>
+        <li>
+          <a href="#1">Einführung</a>
+        </li>
+        <li>
+          <a href="#2">HTML und CSS</a>
+        </li>
+        <li>
+          <a href="#3">RWD</a>
+        </li>
+        <li>
+          <a href="#4">JavaScript</a>
+        </li>
+        <li>
+          <a href="#5">DOM</a>
+        </li>
+        <li>
+          <a href="#6">Asynchrones JS</a>
+        </li>
+        <li>
+          <a href="#7">Modulares Web</a>
+        </li>
+        <li>
+          <a href="#8">SVG</a>
+        </li>
+        <li>
+          <a href="#9">WebApps</a>
+        </li>
+        <li>
+          <a href="#10">Vue.js</a>
+        </li>
+        <li>
+          <a href="#11">MEVN</a>
+        </li>
+        <li>
+          <a href="#12">PHP</a>
+        </li>
+        <li>
+          <a href="#13">React</a>
+        </li>
+        <li>
+          <a href="#14">Security</a>
+        </li>
+      </ul>
+    </nav>
+
     <aside>
       <ul>
         <li>
@@ -23,8 +69,11 @@
         </li>
       </ul>
     </aside>
+
     <article>c</article>
+
     <footer>d</footer>
+
   </div>
 </template>
 
@@ -44,26 +93,50 @@ export default {
 <style>
 #body {
   display: grid;
-  grid-template-columns: 1% 18% 1% 79% 1%;
+  grid-template-columns: 1% 18% 80% 1%;
   grid-template-rows: 1% 8rem 4rem 60rem 1% 8rem 1%;
   grid-template-areas:
-    ". . . . ."
-    ". header header header ."
-    ". nav nav nav ."
-    ". aside . article . "
-    ". . . . ."
-    ". footer footer footer ."
-    ". . . . . ";
+    ". . . ."
+    ". header header ."
+    ". . nav ."
+    ". aside article . "
+    ". . .  ."
+    ". footer footer ."
+    ". . .  . ";
 }
 
 header {
   background-color: red;
   grid-area: header;
 }
-
+header h1 {
+  text-align: center;
+}
 nav {
   background-color: orange;
   grid-area: nav;
+}
+
+nav ul {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 22px 16px;
+  text-decoration: none;
 }
 
 aside {
@@ -71,7 +144,7 @@ aside {
   grid-area: aside;
 }
 
-ul {
+aside ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -80,7 +153,7 @@ ul {
   border: 1px solid #555;
 }
 
-li a {
+aside li a {
   display: block;
   color: #000;
   padding: 10px 16px;
@@ -89,11 +162,7 @@ li a {
 
 li {
   text-align: center;
-  border-bottom: 1px solid #555;
-}
-
-li:last-child {
-  border-bottom: none;
+  border: 1px solid #555;
 }
 
 li a.active {
