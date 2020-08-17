@@ -5,7 +5,7 @@
     </header>
     <nav>
       <ul>
-       <NavigationTop v-on:setNavigantionLeft="setNavigantionLeft"></NavigationTop>
+       <NavigationTop v-on:setNavigationLeft="setNavigationLeft"></NavigationTop>
       </ul>
     </nav>
 
@@ -80,28 +80,6 @@ nav {
   grid-area: nav;
 }
 
-nav ul {
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
-  height: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  float: left;
-}
-
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 22px 16px;
-  text-decoration: none;
-}
-
 aside {
   background-color: limegreen;
   grid-area: aside;
@@ -114,28 +92,6 @@ aside ul {
   width: 100%;
   background-color: #f1f1f1;
   border: 1px solid #555;
-}
-
-aside li a {
-  display: block;
-  color: #000;
-  padding: 10px 16px;
-  text-decoration: none;
-}
-
-li {
-  text-align: center;
-  border: 1px solid #555;
-}
-
-li a.active {
-  background-color: darkgreen;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: green;
-  color: white;
 }
 
 article {

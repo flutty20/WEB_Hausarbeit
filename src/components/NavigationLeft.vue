@@ -1,17 +1,16 @@
 <template> 
 <div>
-  
-    <li v-for="Kapitel in jsondata" v-bind:key="Kapitel" >
-      <a v-bind:href="Kapitel.UebungName">  {{Kapitel.UebungName}} </a>
-    </li>
+    <button v-for="Kapitel in Aufgaben" v-bind:key="Kapitel" >
+      {{Kapitel}} 
+    </button>
 </div>
 
 </template>
 
 <script>
-import json from "../JSON/nav.json";
+
 export default {
-  name: "nav",
+  name: "navLeft",
   props: {
 
     Aufgaben:Array,
@@ -20,7 +19,7 @@ export default {
   },
   data: function () {
     return {
-      jsondata: null,
+      
     };
   },
 
@@ -28,13 +27,17 @@ export default {
  
   },
   created() {
-    this.jsondata = json.nav;
-    console.log(this.jsondata);
+    
   },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 </style>

@@ -1,14 +1,15 @@
 <template>
   <div>
-    <li
+    <button
       v-for="Kapitel in jsondata"
       v-bind:key="Kapitel"
       v-on:click="setNavigationLeft(Kapitel.Aufgaben)"
     >
-      <a v-bind:href="Kapitel.UebungName">{{Kapitel.UebungName}}</a>
-    </li>
+      {{Kapitel.UebungName}}
+    </button>
   </div>
 </template>
+
 
 <script>
 import json from "../JSON/nav.json";
@@ -21,11 +22,14 @@ export default {
     };
   },
 
+
+
   methods: {
+
+    
     setNavigationLeft(Aufgaben) {
-      console.log(Aufgaben) 
-        console.log("Aufgaben")
-      this.$emit("setNavigationLeft", Aufgaben);
+      console.log("\n\n"+Aufgaben+"\n\n")
+      this.$emit("setNavigationLeft",Aufgaben);
     },
   },
   created() {
