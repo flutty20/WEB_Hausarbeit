@@ -15,7 +15,9 @@
       </ul>
     </aside>
 
-    <article>c</article>
+    <article>
+      <U02A2></U02A2>
+    </article>
 
 
     <footer>d</footer>
@@ -26,16 +28,16 @@
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue"
 import NavigationTop from "./components/NavigationTop.vue"
 import NavigationLeft from "./components/NavigationLeft.vue"
+import U02A2 from "./components/U02/U02A4"
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     NavigationTop,
-    NavigationLeft
+    NavigationLeft,
+    U02A2
 
   },
   data: function () {
