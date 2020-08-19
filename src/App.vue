@@ -5,51 +5,71 @@
     </header>
     <nav>
       <ul>
-       <NavigationTop v-on:setNavigationLeft="setNavigationLeft"></NavigationTop>
+        <NavigationTop v-on:setNavigationLeft="setNavigationLeft"></NavigationTop>
       </ul>
     </nav>
 
     <aside>
       <ul>
-        <NavigationLeft v-bind:Aufgaben="this.Aufgaben"></NavigationLeft>
+        <NavigationLeft v-bind:Aufgaben="this.Aufgaben" v-on:loadAufgabe="loadAufgabe"></NavigationLeft>
       </ul>
     </aside>
 
     <article>
-      <U02A2></U02A2>
+      <component v-bind:is="aufgabe"></component>
     </article>
 
-
-    <footer>d</footer>
-
+    <footer></footer>
   </div>
 </template>
 
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
 <script>
-import NavigationTop from "./components/NavigationTop.vue"
-import NavigationLeft from "./components/NavigationLeft.vue"
-import U02A2 from "./components/U02/U02A4"
+import NavigationTop from "./components/NavigationTop.vue";
+import NavigationLeft from "./components/NavigationLeft.vue";
+import U01KA from "./components/U01/U01KA";
+import U02A1 from "./components/U02/U02A1";
+import U02A2 from "./components/U02/U02A2";
+import U02A3 from "./components/U02/U02A3";
+import U02A4 from "./components/U02/U02A4";
+import U02KA from "./components/U02/U02KA";
+import U03A1 from "./components/U03/U03A1";
+import U03A2 from "./components/U03/U03A2";
+import U03A3 from "./components/U03/U03A3";
+import U03A4 from "./components/U03/U03A4";
+import U03KA from "./components/U03/U03KA";
 
 export default {
   name: "App",
   components: {
     NavigationTop,
     NavigationLeft,
-    U02A2
-
+    U01KA,
+    U02A1,
+    U02A2,
+    U02A3,
+    U02A4,
+    U02KA,
+    U03A1,
+    U03A2,
+    U03A3,
+    U03A4,
+    U03KA
   },
   data: function () {
     return {
-      Aufgaben:Array,
+      Aufgaben: Array,
+      aufgabe: String,
     };
   },
   methods: {
+    loadAufgabe(schluessel) {
+      this.aufgabe = schluessel;
+      console.log(schluessel);
+    },
     setNavigationLeft(Aufgaben) {
-
-      this.Aufgaben = Aufgaben
-     
+      this.Aufgaben = Aufgaben;
     },
   },
 };

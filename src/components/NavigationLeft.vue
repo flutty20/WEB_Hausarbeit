@@ -1,7 +1,7 @@
 <template> 
 <div>
-    <button v-for="Kapitel in Aufgaben" v-bind:key="Kapitel" >
-      {{Kapitel}} 
+    <button v-for="(aufgabe,schluessel) in Aufgaben" v-bind:key="schluessel" @click="loadAufgabe(schluessel)" >
+      {{aufgabe}} 
     </button>
 </div>
 
@@ -24,7 +24,13 @@ export default {
   },
 
   methods: {
- 
+ loadAufgabe(schlussel){
+
+   this.$emit("loadAufgabe",schlussel)
+
+ },
+
+
   },
   created() {
     

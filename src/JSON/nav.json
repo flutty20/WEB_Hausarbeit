@@ -15,108 +15,108 @@
                 "U02A4": "Wireframe mit HTML und CSS",
                 "U02KA": "Mögliche Klausuraufgaben"
             }
-        }
-            {
-                "UebungName": "RWD",
-                "Aufgaben": {
-                    "Responsiv mit Flexbox Desktop-First",
-                    "Responsiv mit Flexbox Mobile-First",
-                    "Responsiv mit Grid Layout Desktop-First",
-                    "Responsiv mit Grid Layout Mobile-First",
-                    "Mögliche Klausurfragen"
-                }
-            },
-            {
-                "UebungName": "JavaScript",
-                "Aufgaben": {
-                    "Funktionen in JavaScript",
-                    "JavaScript-Objekte",
-                    "Mögliche Klausuraufgaben"
-                }
-            },
-            {
-                "UebungName": "DOM",
-                "Aufgaben": {
-                    "Einkaufsliste",
-                    "Rednerliste mit Zeitmessung",
-                    "Performanzmessungen",
-                    "Mögliche Klausuraufgaben"
-                }
-            },
-            {
-                "UebungName": "Asynchrones JS",
-                "Aufgaben": {
-                    "Promises",
-                    "async,await",
-                    "WWW-Navigator",
-                    "Mögliche Klausuraufgaben"
-                }
-            },
-            {
-                "UebungName": "Modulares Web",
-                "Aufgaben": {
-                    "Counter mit Start und Limit",
-                    "Stoppuhr",
-                    "Flexible Menü-Komponente",
-                    "Mögliche Klausuraufgaben"
-                }
-            },
-            {
-                "UebungName": "SVG",
-                "Aufgaben": {
-                    "SVG-Diagramm",
-                    "Statistik-Balkendiagramm",
-                    "Bezier-Animation",
-                    "Mögliche Klausuraufgaben"
-                }
-            },
-            {
-                "UebungName": "WebApps",
-                "Aufgaben": {
-                    "Routing",
-                    "State Management"
-                }
-            },
-            {
-                "UebungName": "Vue.js",
-                "Aufgaben": {
-                    "Counter in Vue.js",
-                    "Menü-Komponente",
-                    "Vue.js WWW-Navigator",
-                    "Mögliche Klausuraufgaben"
-                }
-            },
-            {
-                "UebungName": "MEVN",
-                "Aufgaben": {
-                    "Erweiterung der MEVN-App",
-                    "MEVN WWW-Navigator",
-                    "Mögliche Klausuraufgaben"
-                }
-            },
-            {
-                "UebungName": "PHP",
-                "Aufgaben": {
-                    "Registrierung mit PHP",
-                    "Login mit PHP",
-                    "WWW-Navigator zum Content-Editor ausbauen",
-                    "Code Review zu Vue.js"
-                }
-            },
-            {
-                "UebungName": "React",
-                "Aufgaben": {
-                    "React Tutorial"
-                }
-            },
-            {
-                "UebungName": "Security",
-                "Aufgaben": {
-                    "XSS",
-                    "Sicherer Array Wrapper",
-                    "Sicherheitslücken finden",
-                    "Mögliche Klausuraufgaben"
-                }
+        },
+        {
+            "UebungName": "RWD",
+            "Aufgaben": {
+                "U03A1": "Responsiv mit Flexbox Desktop-First",
+                "U03A2": "Responsiv mit Flexbox Mobile-First",
+                "U03A3": "Responsiv mit Grid Layout Desktop-First",
+                "U03A4": "Responsiv mit Grid Layout Mobile-First",
+                "U03KA": "Mögliche Klausurfragen"
             }
-        ]
-    }
+        },
+        {
+            "UebungName": "JavaScript",
+            "Aufgaben": {
+                "U04A1": "Funktionen in JavaScript",
+                "U04A2": "JavaScript-Objekte",
+                "U04KA": "Mögliche Klausuraufgaben"
+            }
+        },
+        {
+            "UebungName": "DOM",
+            "Aufgaben": {
+                "U05A1": "Einkaufsliste",
+                "U05A2": "Rednerliste mit Zeitmessung",
+                "U05A3": "Performanzmessungen",
+                "U05KA": "Mögliche Klausuraufgaben"
+            }
+        },
+        {
+            "UebungName": "Asynchrones JS",
+            "Aufgaben": {
+                "U06A1": "Promises",
+                "U06A2": "async,await",
+                "U06A3": "WWW-Navigator",
+                "U06KA": "Mögliche Klausuraufgaben"
+            }
+        },
+        {
+            "UebungName": "Modulares Web",
+            "Aufgaben": {
+                "U07A1": "Counter mit Start und Limit",
+                "U07A2": "Stoppuhr",
+                "U07A3": "Flexible Menü-Komponente",
+                "U07KA": "Mögliche Klausuraufgaben"
+            }
+        },
+        {
+            "UebungName": "SVG",
+            "Aufgaben": {
+                "U08A1": "SVG-Diagramm",
+                "U08A2": "Statistik-Balkendiagramm",
+                "U08A3": "Bezier-Animation",
+                "U08KA": "Mögliche Klausuraufgaben"
+            }
+        },
+        {
+            "UebungName": "WebApps",
+            "Aufgaben": {
+                "U09A1": "Routing",
+                "U09A2": "State Management"
+            }
+        },
+        {
+            "UebungName": "Vue.js",
+            "Aufgaben": {
+                "U10A1": "Counter in Vue.js",
+                "U10A2": "Menü-Komponente",
+                "U10A3": "Vue.js WWW-Navigator",
+                "U10KA": "Mögliche Klausuraufgaben"
+            }
+        },
+        {
+            "UebungName": "MEVN",
+            "Aufgaben": {
+                "U11A1": "Erweiterung der MEVN-App",
+                "U11A2": "MEVN WWW-Navigator",
+                "U11KA": "Mögliche Klausuraufgaben"
+            }
+        },
+        {
+            "UebungName": "PHP",
+            "Aufgaben": {
+                "U12A1": "Registrierung mit PHP",
+                "U12A2": "Login mit PHP",
+                "U12A3": "WWW-Navigator zum Content-Editor ausbauen",
+                "U12A4": "Code Review zu Vue.js"
+            }
+        },
+        {
+            "UebungName": "React",
+            "Aufgaben": {
+                "U13A1": "React Tutorial"
+            }
+        },
+        {
+            "UebungName": "Security",
+            "Aufgaben": {
+                "U14A1": "XSS",
+                "U14A2": "Sicherer Array Wrapper",
+                "U14A3": "Sicherheitslücken finden",
+                "U14KA": "Mögliche Klausuraufgaben"
+            }
+        }
+    ]
+}
