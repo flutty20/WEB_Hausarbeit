@@ -5,13 +5,18 @@
     </header>
     <nav>
       <ul>
-        <NavigationTop v-on:setNavigationLeft="setNavigationLeft"></NavigationTop>
+        <NavigationTop
+          v-on:setNavigationLeft="setNavigationLeft"
+        ></NavigationTop>
       </ul>
     </nav>
 
     <aside>
       <ul>
-        <NavigationLeft v-bind:Aufgaben="this.Aufgaben" v-on:loadAufgabe="loadAufgabe"></NavigationLeft>
+        <NavigationLeft
+          v-bind:Aufgaben="this.Aufgaben"
+          v-on:loadAufgabe="loadAufgabe"
+        ></NavigationLeft>
       </ul>
     </aside>
 
@@ -144,7 +149,7 @@ export default {
     U14A3,
     U14KA,
   },
-  data: function () {
+  data: function() {
     return {
       Aufgaben: Array,
       aufgabe: String,
