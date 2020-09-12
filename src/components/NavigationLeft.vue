@@ -1,40 +1,31 @@
-<template> 
-<div>
-    <button v-for="(aufgabe,schluessel) in Aufgaben" v-bind:key="schluessel" @click="loadAufgabe(schluessel)" >
-      {{aufgabe}} 
-    </button>
-</div>
-
+<template>
+  <div>
+    <button
+      v-for="(aufgabe,schluessel) in Aufgaben"
+      v-bind:key="schluessel"
+      @click="loadAufgabe(schluessel)"
+    >{{aufgabe}}</button>
+  </div>
 </template>
 
 <script>
-
 export default {
   name: "navLeft",
   props: {
-
-    Aufgaben:Array,
-
-
+    Aufgaben: Array,
   },
   data: function () {
-    return {
-      
-    };
+    return {};
   },
 
   methods: {
- loadAufgabe(schlussel){
-
-   this.$emit("loadAufgabe",schlussel)
-
- },
-
-
+    loadAufgabe(schlussel) {
+      this.$emit("loadAufgabe", schlussel);
+      location.hash = schlussel;
+      
+    },
   },
-  created() {
-    
-  },
+  created() {},
 };
 </script>
 

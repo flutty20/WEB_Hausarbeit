@@ -3,10 +3,8 @@
     <button
       v-for="Kapitel in jsondata"
       v-bind:key="Kapitel"
-      v-on:click="setNavigationLeft(Kapitel.Aufgaben)"
-    >
-      {{Kapitel.UebungName}}
-    </button>
+      v-on:click="setNavigationLeft(Kapitel)"
+    >{{Kapitel.UebungName}}</button>
   </div>
 </template>
 
@@ -22,19 +20,15 @@ export default {
     };
   },
 
-
-
   methods: {
-
-    
-    setNavigationLeft(Aufgaben) {
-      console.log("\n\n"+Aufgaben+"\n\n")
-      this.$emit("setNavigationLeft",Aufgaben);
+    setNavigationLeft(Kapitel) {
+      console.log("\n\n" + Kapitel.Aufgaben + "\n\n");
+      this.$emit("setNavigationLeft", Kapitel.Aufgaben);
+      location.hash = Kapitel.UebungName;
     },
   },
   created() {
     this.jsondata = json.nav;
-    
   },
 };
 </script>

@@ -1,11 +1,10 @@
 <template>
   <div>
-    <p class="frage">
-      2.Erstellen Sie auf Ihrem Server www2.inf.h-brs.de (oder localhost) zwei Text-Dateien A.txt und B.txt mit ungefähr gleich vielen Zeilen. Laden Sie mit der fetch-API parallel beide Text-Dateien vom Server. Geben Sie auf einer Webseite den Inhalt beider Dateien zeilenweise aus, wobei der Anfang der Zeile aus A.txt und das Ende aus B.txt stammen soll. Die beiden Dateien sollen also zeilenweise konkateniert werden. Erzielen Sie max. Geschwindigkeit durch paralleles Laden. Verwenden Sie dabei ausschließlich die async / await ohne Promise API .
-      <button
-        @click="combine()()"
-      >Texte Kombinieren</button>
-    </p>
+    <p
+      class="frage"
+    >2.Erstellen Sie auf Ihrem Server www2.inf.h-brs.de (oder localhost) zwei Text-Dateien A.txt und B.txt mit ungefähr gleich vielen Zeilen. Laden Sie mit der fetch-API parallel beide Text-Dateien vom Server. Geben Sie auf einer Webseite den Inhalt beider Dateien zeilenweise aus, wobei der Anfang der Zeile aus A.txt und das Ende aus B.txt stammen soll. Die beiden Dateien sollen also zeilenweise konkateniert werden. Erzielen Sie max. Geschwindigkeit durch paralleles Laden. Verwenden Sie dabei ausschließlich die async / await ohne Promise API .</p>
+    <button @click="combine()()">Texte Kombinieren</button>
+
     <div id="U6A2"></div>
   </div>
 </template>

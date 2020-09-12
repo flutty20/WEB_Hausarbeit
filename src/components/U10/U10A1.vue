@@ -1,19 +1,23 @@
+//App.vue
 <template>
-  <div >
-
+  <div id="app">
+    <Counter />
+    <Counter />
   </div>
 </template>
 
 <script>
-export default {
-  name: '',
-  props: {
+//importieren des Counter.vue
+import Counter from "./U10A1_Counter";
 
-  }
-}
+export default {
+  name: "app",
+  components: {
+    //coponente hinzufügen
+    Counter,
+  },
+};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 </style>
