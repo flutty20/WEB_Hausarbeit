@@ -30,8 +30,10 @@ export default {
     const content = document.querySelector("#content");
     const sidebar = document.querySelector("#sidenav");
     const html = document.querySelector("#html");
-    const js = document.getElementById("js");
     const css = document.getElementById("css");
+    const js = document.getElementById("js");
+    //const other = document.getElementById("other");
+
     var jsondata;
 
     async function fetchjson() {

@@ -171,7 +171,7 @@ export default {
 #body {
   display: grid;
   grid-template-columns: 1% 18% 80% 1%;
-  grid-template-rows: 1% 8rem 4rem 60rem 1% 8rem 1%;
+  grid-template-rows: 1% 8rem 4rem 50rem 1% 8rem 1%;
   grid-template-areas:
     ". . . ."
     ". header header ."
@@ -195,7 +195,7 @@ nav {
 }
 
 aside {
-  background-color: limegreen;
+  background-color: blue;
   grid-area: aside;
 }
 
@@ -209,13 +209,24 @@ aside ul {
 }
 
 article {
-  background-color: blue;
+  background-color: green;
   grid-area: article;
+  overflow-y: auto;
+  padding: 10px;
 }
 
 footer {
   background-color: magenta;
   grid-area: footer;
+}
+.frage {
+  margin: 0%;
+  padding: 0%;
+  font-weight: bold;
+}
+.antwort {
+  margin: 0%;
+  padding: 0%;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make last column stack on top of the other */
