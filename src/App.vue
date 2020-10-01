@@ -22,9 +22,11 @@
 
     <article>
       <component v-bind:is="aufgabe"></component>
+      <router-view id="routerview"></router-view>
     </article>
 
     <footer></footer>
+    <button @click="testrouter"></button>
   </div>
 </template>
 
@@ -153,11 +155,26 @@ export default {
     return {
       Aufgaben: Array,
       aufgabe: String,
+      rooted: Boolean,
     };
   },
+  updated: function() {
+    console.log(document.getElementById("routerview").innerText == "");
+    if (document.getElementById("routerview").innerText == "") {
+      this.rooted == false;
+    } else {
+      this.rooted == true;
+    }
+    console.log("updated");
+  },
   methods: {
+    testrouter() {
+      var x = document.getElementById("routerview");
+      console.log(x);
+    },
     loadAufgabe(schluessel) {
       this.aufgabe = schluessel;
+      document.getElementById("routerview").innerText = null;
       console.log(schluessel);
     },
     setNavigationLeft(Aufgaben) {
