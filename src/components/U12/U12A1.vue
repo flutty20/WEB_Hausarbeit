@@ -1,5 +1,6 @@
 <template>
   <form method="post">
+    <a href="public\U12A1.php">Link </a>
     <table>
       <tbody>
         <tr>
@@ -15,49 +16,25 @@
         <tr>
           <td align="right">Vorname:</td>
           <td>
-            <input maxlength="50" name="Vorname" size="45" type="text" />
+            <input maxlength="50" name="vorname" size="45" type="text" />
           </td>
         </tr>
         <tr>
           <td align="right">Nachname:</td>
           <td>
-            <input maxlength="50" name="Nachname" size="45" type="text" />
-          </td>
-        </tr>
-        <tr>
-          <td align="right">Strasse:</td>
-          <td>
-            <input maxlength="50" name="Strasse" size="45" type="text" />
-          </td>
-        </tr>
-        <tr>
-          <td align="right">PLZ:</td>
-          <td>
-            <input maxlength="5" name="PLZ" size="7" type="text" />
-          </td>
-        </tr>
-        <tr>
-          <td align="right">Ort:</td>
-          <td>
-            <input maxlength="50" name="Ort" size="45" type="text" />
-          </td>
-        </tr>
-        <tr>
-          <td align="right">Land:</td>
-          <td>
-            <input name="Land" size="45" type="text" value="Deutschland" />
+            <input maxlength="50" name="nachname" size="45" type="text" />
           </td>
         </tr>
         <tr>
           <td align="right">Email:</td>
           <td>
-            <input maxlength="80" name="Email" size="45" type="email" />
+            <input maxlength="80" name="email" size="45" type="email" />
           </td>
         </tr>
         <tr>
           <td align="right">Passwort:</td>
           <td>
-            <input maxlength="80" name="Passwort" size="45" type="text" />
+            <input maxlength="80" name="passwort" size="45" type="text" />
           </td>
         </tr>
         <tr>

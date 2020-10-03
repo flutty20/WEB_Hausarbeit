@@ -4,24 +4,18 @@
       <h1>WEB Hausarbeit</h1>
     </header>
     <nav>
-      <ul>
-        <NavigationTop
-          v-on:setNavigationLeft="setNavigationLeft"
-        ></NavigationTop>
-      </ul>
+      <NavigationTop v-on:setNavigationLeft="setNavigationLeft"></NavigationTop>
     </nav>
 
     <aside>
-      <ul>
-        <NavigationLeft
-          v-bind:Aufgaben="this.Aufgaben"
-          v-on:loadAufgabe="loadAufgabe"
-        ></NavigationLeft>
-      </ul>
+      <NavigationLeft
+        v-bind:Aufgaben="this.Aufgaben"
+        v-on:loadAufgabe="loadAufgabe"
+      ></NavigationLeft>
     </aside>
 
     <article>
-      <component v-bind:is="aufgabe"></component>
+      <component v-if="rooted" v-bind:is="aufgabe"></component>
       <router-view id="routerview"></router-view>
     </article>
 
@@ -155,24 +149,22 @@ export default {
     return {
       Aufgaben: Array,
       aufgabe: String,
-      rooted: Boolean,
+      rooted: true,
     };
   },
   updated: function() {
-    console.log(document.getElementById("routerview").innerText == "");
-    if (document.getElementById("routerview").innerText == "") {
-      this.rooted == false;
-    } else {
-      this.rooted == true;
-    }
-    console.log("updated");
+    console.log(document.getElementById("routerview").innerText.length > 0);
+    this.rooted = !(document.getElementById("routerview").innerText.length > 0);
+    console.log("rooted:", this.rooted);
   },
+
   methods: {
     testrouter() {
       var x = document.getElementById("routerview");
       console.log(x);
     },
     loadAufgabe(schluessel) {
+      this.rooted = true;
       this.aufgabe = schluessel;
       document.getElementById("routerview").innerText = null;
       console.log(schluessel);
@@ -188,15 +180,15 @@ export default {
 #body {
   display: grid;
   grid-template-columns: 1% 18% 80% 1%;
-  grid-template-rows: 1% 8rem 4rem 50rem 1% 8rem 1%;
+  grid-template-rows: 1% 8rem 4rem 40rem 1% 8rem;
+  grid-template-rows: 1vh 10vh 11vh 66vh 1vh 9vh;
   grid-template-areas:
     ". . . ."
     ". header header ."
     ". . nav ."
     ". aside article . "
     ". . .  ."
-    ". footer footer ."
-    ". . .  . ";
+    ". footer footer .";
 }
 
 header {
@@ -210,19 +202,16 @@ nav {
   background-color: orange;
   grid-area: nav;
 }
+nav div {
+  width: auto;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
 
 aside {
   background-color: blue;
   grid-area: aside;
-}
-
-aside ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: #f1f1f1;
-  border: 1px solid #555;
 }
 
 article {
@@ -251,7 +240,8 @@ footer {
   #body {
     display: grid;
     grid-template-columns: 1% 98% 1%;
-    grid-template-rows: 1% 8rem 4rem 4rem 60rem 1% 8rem 1%;
+    grid-template-rows: 1% 8rem 4rem 4rem 40rem 1% 8rem;
+    grid-template-rows: 1vh 12vh 12vh 10vh 60vh 1vh 5vh;
     grid-template-areas:
       ". . . "
       ". header ."
@@ -259,8 +249,13 @@ footer {
       ". aside . "
       ".article ."
       ". . ."
-      ". footer ."
-      ". . .";
+      ". footer .";
+  }
+  aside div {
+    width: auto;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
   }
 }
 </style>

@@ -4,17 +4,18 @@
       v-for="Kapitel in jsondata"
       v-bind:key="Kapitel"
       v-on:click="setNavigationLeft(Kapitel)"
-    >{{Kapitel.UebungName}}</button>
+    >
+      {{ Kapitel.UebungName }}
+    </button>
   </div>
 </template>
-
 
 <script>
 import json from "../JSON/nav.json";
 export default {
   name: "NavTop",
   props: {},
-  data: function () {
+  data: function() {
     return {
       jsondata: null,
     };
@@ -35,4 +36,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+div {
+  padding: 5px;
+}
 </style>

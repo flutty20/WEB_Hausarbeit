@@ -1,10 +1,12 @@
 <template>
   <div>
     <button
-      v-for="(aufgabe,schluessel) in Aufgaben"
+      v-for="(aufgabe, schluessel) in Aufgaben"
       v-bind:key="schluessel"
       @click="loadAufgabe(schluessel)"
-    >{{aufgabe}}</button>
+    >
+      {{ aufgabe }}
+    </button>
   </div>
 </template>
 
@@ -14,7 +16,7 @@ export default {
   props: {
     Aufgaben: Array,
   },
-  data: function () {
+  data: function() {
     return {};
   },
 
@@ -22,7 +24,6 @@ export default {
     loadAufgabe(schlussel) {
       this.$emit("loadAufgabe", schlussel);
       location.hash = schlussel;
-      
     },
   },
   created() {},
@@ -36,5 +37,10 @@ div {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 800px) {
+  div {
+    display: inline-block;
+  }
 }
 </style>
