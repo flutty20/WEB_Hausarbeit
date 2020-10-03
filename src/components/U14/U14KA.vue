@@ -45,16 +45,20 @@
 </p>
 <br>
 
-    <p class="frage">Beschreiben Sie die Content Security Policy (CSP) und geben Sie ein Beispiel.</p>
+    <p class="frage">Beschreiben Sie die Content Security Policy (CSP)</p>
     <p class="antwort">The HTTP Content-Security-Policy response header allows web site administrators to control resources the user agent is allowed to load for a given page. With a few exceptions, policies mostly involve specifying server origins and script endpoints. This helps guard against cross-site scripting attacks (XSS).
       <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy">Quelle: mdn</a>
     </p>
 <br>
-    <p class="frage">Beschreiben Sie Subresource Integrity (SRI) und geben Sie ein Beispiel.</p>
-    <p class="antwort">Tim Berners-Lee</p>
+    <p class="frage">Beschreiben Sie Subresource Integrity (SRI)</p>
+    <p class="antwort">Subresource Integrity oder SRI ist eine W3C-Empfehlung zur Bereitstellung einer Methode zum Schutz der Website-Bereitstellung. Insbesondere werden Assets validiert, die von Dritten bereitgestellt werden, z. B. ein Netzwerk für die Bereitstellung von Inhalten. 
+      <a href="https://en.wikipedia.org/wiki/Subresource_Integrity">Quelle: wikipedia</a>
+    </p>
 <br>
     <p class="frage">Beschreiben Sie JSON Web Token (JWT) und geben Sie ein Beispiel.</p>
-    <p class="antwort">Tim Berners-Lee</p>
+    <p class="antwort">Ein JSON Web Token ist ein auf JSON basiertes und nach RFC 7519 genormtes Access-Token. Das JWT ermöglicht den Austausch von verifizierbaren Claims.
+      <a href="https://de.wikipedia.org/wiki/JSON_Web_Token">Quelle: wikipedia</a>
+    </p>
   </div>
 </template>
 
