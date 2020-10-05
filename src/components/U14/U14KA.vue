@@ -1,10 +1,6 @@
 <template>
   <div>
-    <p class="frage">Was ist das positive Sicherheitsmodell und warum wird es bevorzugt?</p>
-    <p class="antwort">
-
-    </p>
-<br>
+    <h1>Mögliche Klausuraufgaben</h1>
     <p class="frage">Nennen Sie die OWASP Top 10 Sicherheitsprobleme für WebApps.</p>
     <p class="antwort">
       <ol>

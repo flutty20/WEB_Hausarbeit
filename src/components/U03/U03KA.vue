@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Mögliche Klausuraufgaben</h1>
     <p class="frage">
       Was versteht man unter der Design-Methode "Mobile First"? Geben Sie mit
       einer CSS-Regel ein Grid-Layout für body an, das bei schmalen Bildschirmen

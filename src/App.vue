@@ -24,8 +24,9 @@
       <router-view id="routerview"></router-view>
     </article>
 
-    <footer></footer>
-    <button @click="testrouter"></button>
+    <footer>
+      <a href=""> link zur Vorlesung</a>
+    </footer>
   </div>
 </template>
 

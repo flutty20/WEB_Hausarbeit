@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>Mögliche Klausuraufgaben</h1>
-    <br />
     <p class="frage">Wer gilt als Erfinder des World Wide Web (WWW)?</p>
     <p class="antwort">Tim Berners-Lee</p>
     <br />

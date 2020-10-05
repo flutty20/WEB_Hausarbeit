@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Mögliche Klausuraufgaben</h1>
     <p class="frage">
       Über welche Art der Typisierung verfügt die Programmiersprache JavaScript?
     </p>
