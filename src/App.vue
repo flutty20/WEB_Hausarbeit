@@ -3,6 +3,11 @@
     <header>
       <h1>WEB Hausarbeit</h1>
     </header>
+
+    <div id="logo">
+      <img src="Logo.jpg" alt="Logo" width="100%" height="100%" />
+    </div>
+
     <nav>
       <NavigationTop v-on:setNavigationLeft="setNavigationLeft"></NavigationTop>
     </nav>
@@ -57,9 +62,9 @@ import U06A2 from "./components/U06/U06A2";
 import U06A3 from "./components/U06/U06A3";
 import U06KA from "./components/U06/U06KA";
 
-import U07A1 from "./components/U07/U07A1";
-import U07A2 from "./components/U07/U07A2";
-import U07A3 from "./components/U07/U07A3";
+import U07A1 from "./components/U07/U07A1.vue";
+import U07A2 from "./components/U07/U07A2.vue";
+import U07A3 from "./components/U07/U07A3.vue";
 import U07KA from "./components/U07/U07KA";
 
 import U08A1 from "./components/U08/U08A1";
@@ -180,12 +185,11 @@ export default {
 #body {
   display: grid;
   grid-template-columns: 1% 18% 80% 1%;
-  grid-template-rows: 1% 8rem 4rem 40rem 1% 8rem;
   grid-template-rows: 1vh 10vh 11vh 66vh 1vh 9vh;
   grid-template-areas:
     ". . . ."
     ". header header ."
-    ". . nav ."
+    ". logo nav ."
     ". aside article . "
     ". . .  ."
     ". footer footer .";
@@ -198,13 +202,17 @@ header {
 header h1 {
   text-align: center;
 }
+#logo {
+  grid-area: logo;
+  background-color: darkviolet;
+}
 nav {
   background-color: orange;
   grid-area: nav;
 }
 nav div {
-  width: auto;
-  margin: 0 auto;
+  width: 100%;
+  padding: auto;
   display: inline-block;
   text-align: center;
 }
@@ -240,8 +248,7 @@ footer {
   #body {
     display: grid;
     grid-template-columns: 1% 98% 1%;
-    grid-template-rows: 1% 8rem 4rem 4rem 40rem 1% 8rem;
-    grid-template-rows: 1vh 12vh 12vh 10vh 60vh 1vh 5vh;
+    grid-template-rows: 1vh 11vh 11vh 10vh 60vh 1vh 5vh;
     grid-template-areas:
       ". . . "
       ". header ."

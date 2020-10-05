@@ -1,16 +1,40 @@
 <template>
   <div>
     <p class="frage">Vergleichen Sie Vue.js mit LitElement. Was sind die wesentlichen Unterschiede? Was sind die jeweiligen Vor- und Nachteile?</p>
-    <p class="antwort">Tim Berners-Lee</p>
-
-    <p class="frage">Ergänzen Sie ein Vue.js-Programm (als Lückentext) um die passenden Vue.js-Direktiven.</p>
-    <p class="antwort">Tim Berners-Lee</p>
-
-    <p class="frage">Schreiben Sie eine Vue.js-Komponente Counter, die einen Button zum Inkrementieren besitzt und den Zählerstand anzeigt.</p>
-    <p class="antwort">Tim Berners-Lee</p>
-
-    <p class="frage">Schreiben Sie eine Vue.js-Komponente Switch, die einen Button zum An- und Ausschalten besitzt und damit eine Lampe ein- und ausschaltet.</p>
-    <p class="antwort">Tim Berners-Lee</p>
+    <br>
+    <p class="antwort">
+      <table border="1px solid black">
+        <tr>
+          <th>Name</th>
+          <th>Vorteile</th>
+        </tr>
+        <tr>
+          <td>Vue.js</td>
+          <td>
+            <ul>
+              <li>Gute Dokumentation</li>
+              <li>Lernkurve</li>
+              <li>Weniger Restriktionen, mehr Flexibilität</li>
+              <li>Performance</li>
+              <li>Tooling</li>
+              <li>Community</li>
+              <li><a href="https://blog.codecentric.de/2018/02/vue-js-simple-make-complicated/">Quelle: codecentric</a></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>LitElement</td>
+          <td>
+            <ul>
+              <li>Schnell</li>
+              <li>klein</li>
+              <li>leicht zu lernen</li>
+              <li>kein framwork nötig</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </p>
   </div>
 </template>
 

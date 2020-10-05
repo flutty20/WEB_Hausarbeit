@@ -37,6 +37,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 div {
-  padding: 5px;
+  display: inline-block;
+  padding: 4% 0;
 }
 </style>
